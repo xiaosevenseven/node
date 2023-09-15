@@ -3,7 +3,16 @@
 // 用户注册  
 exports.register = async (req, res, next) => {
   try {
-    // 处理请求
+    console.log(req.body)
+    /**
+     * 获取请求体数据
+     * 数据验证
+     *  基本数据验证
+     *  业务数据验证
+     * 验证通过，将数据保存到数据库
+     * 发送成功响应
+     */
+
     res.send('register')
   } catch (err) {
     next(err)
